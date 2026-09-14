@@ -1,5 +1,20 @@
 # Boxes and Diamonds
 
+This fork uses the Chinese translation of the Open Logic Text as the
+`OpenLogic` submodule. Clone it with all nested assets:
+
+```sh
+git clone --recurse-submodules https://github.com/domo-domino-desu/boxes-and-diamonds.git
+```
+
+To pick up a newer Open Logic translation, update and commit the submodule
+pointer:
+
+```sh
+git submodule update --remote --recursive OpenLogic
+git add OpenLogic
+```
+
 ![Book Cover](https://bd.openlogicproject.org/bd.png)
 
 A textbook for modal and other intensional logics based on the Open
