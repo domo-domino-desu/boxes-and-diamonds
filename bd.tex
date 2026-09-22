@@ -4,7 +4,7 @@
 % driver file bd.tex to produce text
 
 \preto\OLEndChapterHook{\IfFileExists{include/summary-\thechapter}
-        {\section*{Summary}\addcontentsline{toc}{section}{Summary}
+        {\section*{摘要}\addcontentsline{toc}{section}{摘要}
         \let\emph\textbf\input{include/summary-\thechapter}\let\emph\textit}{}}
 
 \problemsperchapter
@@ -23,7 +23,7 @@
 
 \olimport*[normal-modal-logic]{normal-modal-logic}
 
-\part{Intuitionistic Logic}
+\part{直觉主义逻辑}
 
 \olimport*[intuitionistic-logic/introduction]{introduction}
 
@@ -37,7 +37,7 @@
 
 \olimport*[applied-modal-logic]{applied-modal-logic}
 
-\part{Appendices}
+\part{附录}
 
 \appendix
 
@@ -47,7 +47,7 @@
 \tagfalse{FOL}
 \olimport*[propositional-logic/syntax-and-semantics]{syntax-and-semantics}
 
-\chapter{Axiomatic \usetoken{P}{derivation}}
+\chapter{公理化推导}
 
 \olimport*[first-order-logic/proof-systems]{introduction}
 \olimport*[first-order-logic/proof-systems]{axiomatic-deduction}
@@ -62,7 +62,7 @@
 
 \OLEndChapterHook
 
-\chapter{Tableaux}
+\chapter{分析表}
 
 \olimport*[first-order-logic/proof-systems]{tableaux}
 \olimport*[first-order-logic/tableaux]{rules-and-proofs}
@@ -76,7 +76,7 @@
 
 \OLEndChapterHook
 
-\chapter{The Completeness Theorem}
+\chapter{完备性定理}
 
 \olimport*[first-order-logic/completeness]{introduction}
 \olimport*[first-order-logic/completeness]{outline}
