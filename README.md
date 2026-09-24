@@ -15,6 +15,13 @@ git submodule update --remote --recursive OpenLogic
 git add OpenLogic
 ```
 
+The Chinese edition needs LuaLaTeX (the text is typeset with `ctex` and
+New Computer Modern), so build it with `make`, which runs
+`latexmk -lualatex`, rather than with `pdflatex`. Every push to
+`master` builds `bd-screen.pdf`, `bd-print.pdf` and
+`bd-print-cover.pdf` in GitHub Actions and attaches them to a
+[release](https://github.com/domo-domino-desu/boxes-and-diamonds/releases).
+
 ![Book Cover](https://bd.openlogicproject.org/bd.png)
 
 A textbook for modal and other intensional logics based on the Open
